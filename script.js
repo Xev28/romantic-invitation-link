@@ -51,4 +51,16 @@ sendReplyBtn.addEventListener("click", async () => {
     sendReplyBtn.disabled = false;
     sendReplyBtn.textContent = "Send Reply 💌";
   }
+  
+const backTop = document.getElementById("backTop");
+
+if (backTop) {
+  backTop.addEventListener("click", function () {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  });
+}
+
 });
